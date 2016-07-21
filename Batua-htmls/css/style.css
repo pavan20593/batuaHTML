@@ -8,7 +8,7 @@ body {
 }
 
 .page-header{
-    min-width: 400px;
+    min-width: 285px;
 }
 
 .page-header.navbar {
@@ -73,7 +73,7 @@ th,td {
 
 .status {
     min-width: 160px;
-    max-width: 180px;
+    max-width: 10%;
 }
 
 .action {
@@ -123,8 +123,6 @@ th,td {
     background-color: transparent!important;
 }
 
-
-
 .colorlabel {
     color:#34495e !important;
 }
@@ -136,17 +134,32 @@ th,td {
 
 }
 
-/*@media (max-width: 300px){
-    .control-label {
-        width:100%;
 
-    }
-    .formcontrolresp{
-        width:100%;
-    }
-}*/
+@media (max-width:600px) {
+	.input-medium.customInput{
+		width:100px !important;
+		
+	}
+
+	.input-group {
+		margin-bottom: 10px;
+	}
 
 
+}
+
+
+
+@media (max-width: 300px){
+	
+	.btn-group {
+		text-align: center;
+	}
+
+	.fa .fa-plus {
+		padding-right:10px;
+	}
+}
 
 .page-sidebar .page-sidebar-menu > li.active.open > a:hover , {
     background: #3980C2 !important;
@@ -206,13 +219,16 @@ tbody.datatablecustom > tr > td {
     margin-right:30px;
 }
 
-.page-container{
-
+.page-header.navbar .top-menu {
+    background-color: transparent;
 }
 
 .page-sidebar .page-sidebar-menu > li > a {
-    border-top: 1px solid #3d4957;
     color: #e5e5e5;
+}
+
+.page-sidebar-menu{
+	padding-top: 20px!important;
 }
 
 }
@@ -222,8 +238,6 @@ tbody.datatablecustom > tr > td {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
-
 
 .company-logo {
    margin-left: 5%;
@@ -273,7 +287,7 @@ tbody.datatablecustom > tr > td {
 
 }
 
-.
+
 
 .content-heading {
     
@@ -345,9 +359,6 @@ tbody.datatablecustom > tr > td {
     .img-mobile {
     display:none;
     }
-
-   
-
     
 }
 
@@ -356,31 +367,340 @@ tbody.datatablecustom > tr > td {
 }
 
 @media screen and (max-width: 320px) {
-
-   .uploadbtn {
-    width:100% !important;
-    padding:10px;
-   }  
-
-    .deletebtn {
-    width:100% !important;
-     padding:10px;
-   } 
-
    .content-section {
     width:300px !important;
    }
     
 }
 
-@media (max-width 480px){
-    .page-header.navbar .top-menu {
-    background-color:transparent !important;
+@media (min-width: 840px){
+	.uploadbtn {
+		width:100%;
+		padding:10px;
+	}
+
+	 .deletebtn {
+    	width:100% !important;
+     	padding:10px;
+   } 
 }
 
+@media (max-width: 839px) {
+	.uploadbtn {
+		width:100px;
+		padding:10px;
+	}
+
+	 .deletebtn {
+    	width:100px ;
+     	padding:10px;
+   } 
+
+   .deletebtn.deletedp {
+   	width:100%;
+   }
+
+   .uploadbtn.uploaddp {
+   	width:100%;
+   }
+}
+
+@media (max-width: 660px) {
+	.merchantdp {
+		width:50%;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+	.dpholder {
+		width:250px;
+	}
+
+	.deletedp {
+		margin-left: 15px;
+		
+	}
+	.uploaddp {
+		margin-left: 15px;
+		
+	}
+
+	 .deletebtn.deletedp {
+   	width:100px;
+   }
+
+   .uploadbtn.uploaddp {
+   	width:100px;
+   }
+
+}
+
+@media (max-width: 580px) {
+
+	.merchantdp {
+		width:50%;
+		margin-left:100px;
+		margin-right: 100px;
+	}
+
+	.deletedp {
+		margin-left: 75px;
+		
+	}
+	.uploaddp {
+		margin-left: 75px;
+		margin-top: 10px!important;
+		
+	}
+
+}
+
+@media (max-width: 500px) {
+	.merchantdp {
+		width:50%;
+		margin-left: 50px;
+		margin-right:50px;
+	}
+
+	.maplabel,.gallerylabel{
+		width:80%;
+	}
+
+	.mapholder,.galleryboxholder {
+		width: 100%;
+	}
+}
+
+@media (max-width: 420px) {
+	.merchantdp {
+		width:50%;
+		margin-left: 20px;
+		margin-right:20px;
+	}
+}
+
+@media (max-width: 350px) {
+	.dpholder {
+		width:180px;
+	}
+		.merchantdp {
+		width:50%;
+		margin-left: 20px;
+		margin-right:20px;
+	}
+
+	.deletedp {
+		margin-left: 40px !important;
+	}
+	.uploaddp {
+		margin-left: 40px !important;
+	}
+	
+
+}
+
+#search,#date {
+	margin-left: 0px;
+}
+
+@media (max-width: 370px) {
+
+	.caption {
+		width:100%;
+	}
+
+	.control-label{
+		width: 100%;
+		margin-left: 25px;
+		margin-bottom: 10px;
+	}
+
+	.form-control {
+		min-width: 200px;
+		margin-left: 25px;
+		margin-bottom: 10px;
+	}
+
+	.form-control.searchFormControl {
+		min-width: 150px;
+		margin-left: 0px;
+	}
+
+	.form-control.searchFormControl.dateSearch {
+		min-width: 150px !important;
+		margin-left: 0px;
+	}
+
+	.imgholder {
+		width:150px;
+		margin-left:50%;
+		margin-right: 50%;
+
+	}
+
+	.text-danger {
+		margin-left: 26px;
+		width: 150px;
+	}
+
+	.uploadbtn {
+		width:100px;
+		padding:10px;
+		margin-left:200%;
+		margin-right: 50%;
+	}
+
+	.uploadbtn.uploadgallery {
+		margin-left: 80px;
+	}
+
+	.deletebtn.deletegallery {
+		margin-left: 80px;
+	}
+
+	.galleryboxholder {
+		width: 100%;
+	}
+	 .deletebtn {
+    	width:100px ;
+     	padding:10px;
+     	margin-left:200%;
+		margin-right: 50%;
+   } 
+
+   .deletebtn.deletedp {
+   	margin-left: 80px;
+
+   }
+   .uploadbtn.uploaddp {
+   	margin-left: 80px;
+
+   }
+
+
+   .offerstartdate,.offerenddate,.promostartdate,.promoenddate {
+   	padding-left: 35px ;
+   }
+
+   .offerstartdate.searchDateInput {
+   	padding-left: 0px ;
+   }
+
+   #date {
+   	min-width: 160px;
+   }
+
+   .datehelpbox {
+		margin-left: 26px;
+		width: 180px;
+	}
+
+	.merchantformbody {
+		padding-left: 0px !important;
+	}
+
+
+}
+
+@media (min-width: 670px) {
+	.searchUserInput,.searchIdInput {
+		width: 50%;
+	}
+}
+
+@media (max-width: 669px){
+	.searchUserInput,.searchIdInput,.searchMerchantInput,.searchStartDateInput,.searchEndDateInput {
+		width: 50%;
+	}
+}
+
+@media (max-width: 475px){
+	.searchMerchantInput,.searchStartDateInput,.searchEndDateInput {
+		width: 75%;
+	}
+
+	.searchUserInput,.searchIdInput {
+		width:90%;
+	}
 }
 
 
+
+@media (min-width: 371px) {
+	.datehelpbox.enddatehelpbox.settlementdatehelpbox {
+		left:25%;
+	}
+}
+
+@media (max-width: 290px) {
+	.mapholderbox {
+		min-width: 200px;
+	}
+}
+@media (max-width: 300px){
+	.form-control {
+		min-width: 150px;
+		margin-left:25px;
+		margin-bottom: 10px;
+	}
+
+	.imgholder {
+		width:120px;
+		margin-left:50%;
+		margin-right: 50%;
+
+	}
+
+
+	.uploadbtn {
+		width:100px;
+		padding:10px;
+		margin-left:200%;
+		margin-right: 50%;
+	}
+
+	 .deletebtn {
+    	width:100px ;
+     	padding:10px;
+     	margin-left:200%;
+		margin-right: 50%;
+   } 
+
+
+   #date {
+   	min-width: 120px;
+   }
+}
+
+
+@media (max-width: 431px) {
+	.datehelpbox {
+		left: 0px;
+	}
+
+	.datehelpbox.enddatehelpbox {
+		left:25%;
+	}
+}
+
+@media (max-width: 412px) {
+	.datehelpbox.enddatehelpbox {
+		left:0px;
+	}
+}
+
+@media (max-width: 660px){
+	.merchanteditform {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px)
+{
+	.status ,.action{
+		width:100px;
+	}
+}
 
 .portlet.box.purple > .portlet-title {
     background-color:#3980c2 !important;
@@ -510,7 +830,31 @@ a, button, code, div, img, input, label, li, p, pre, select, span, svg, table, t
     margin-top:5%;
   }
 
+  .margincontentmail {
+    margin-left:10%;
+    margin-top:5%;
+  }
 
+.portlet-box-blue {
+	min-width: 500px;
+}
+
+.emailbody {
+	height:auto;
+	width: 100%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.emaillogo {
+	
+	text-align: center;
+}
+
+.form .form-actions.emailfooter, .portlet-form .form-actions.emailfooter {
+    
+    background-color: #3980c2;
+}
 
 .copyrightcenter{
     text-align: center;
